@@ -1,0 +1,14 @@
+.effectImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mtcImgText {
+  color: transparent;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: var(--color-primary);
+  z-index: -1;
+  opacity: .5;
+  top: -5%;
+}

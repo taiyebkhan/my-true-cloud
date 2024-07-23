@@ -1,0 +1,50 @@
+.blogsContainer {
+  position: relative;
+}
+
+.blogsContainer button {
+  position: absolute;
+  width: 74px;
+  height: 85px;
+  border-radius: 0;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1f7bb3;
+}
+.blogsContainer button:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.blogsContainer > :last-child {
+  right: 0;
+}
+
+@media (max-width: 769px) {
+  .blogsContainer button {
+    width: 30px;
+    height: 36px;
+    border-radius: 4px;
+    color: #fff;
+    top: 120%;
+    left: 43%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: #1f7bb3;
+  }
+
+  .blogsContainer :last-child {
+    left: 57%;
+  }
+
+  .blogsContainer button:active {
+    /* transform: translateY(-20%) scale(0.95); */
+       transform: translateY(-50%) translateX(-50%) scale(.95);
+    
+  }
+}
+
+@media (max-width: 640px) {
+   .blogsContainer button {
+    top: 115%;
+   }
+}

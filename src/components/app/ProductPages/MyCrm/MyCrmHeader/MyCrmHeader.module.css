@@ -1,0 +1,19 @@
+.effectImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(35%, -40%);
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .effectImg {
+    top: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .effectImg {
+    top: 65%;
+    transform: translate(25%, -40%);
+  }
+}

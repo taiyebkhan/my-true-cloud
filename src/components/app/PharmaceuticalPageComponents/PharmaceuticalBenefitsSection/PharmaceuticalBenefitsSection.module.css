@@ -1,0 +1,31 @@
+.evenCard,
+.oddCard {
+  position: relative;
+}
+
+.oddCard::before,
+.evenCard::before {
+  content: "";
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-bottom: 4px dashed #a0a0a0;
+  border-left: 4px dashed #a0a0a0;
+  z-index: -1;
+}
+
+.evenCard::before {
+  border-left: none;
+  border-right: 4px dashed #a0a0a0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .oddCard::before,
+  .evenCard::before {
+    display: none;
+  }
+}

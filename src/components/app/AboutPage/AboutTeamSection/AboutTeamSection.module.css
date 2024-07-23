@@ -1,0 +1,87 @@
+.hoverCardContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../assets/img/about-team-card-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 20px;
+  padding-top: 96px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.activeHoverCard {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nameDesignationContainer {
+  transition: all 0.8s;
+  /* position: absolute; */
+  /* bottom: 16px; */
+}
+
+.nameDesignationContainer > :last-child {
+  color: var(--color-primary);
+}
+
+.activeNameDesignationContainer {
+  /* top: 24px; */
+  /* left: 30px; */
+  /* transform: translateY(-300px) translateX(20px); */
+  transform: translateY(-20vw);
+  z-index: 10;
+}
+@media screen and (width<=1025px) {
+  .activeNameDesignationContainer {
+    transform: translateY(-31vw);
+  }
+  .hoverCardContainer {
+    width: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (width<=975px) {
+  .activeNameDesignationContainer {
+    transform: translateY(-34vw);
+  }
+}
+@media screen and (width<=880px) {
+  .activeNameDesignationContainer {
+    transform: translateY(-36vw);
+  }
+  .hoverCardContainer {
+    width: 100%;
+  }
+}
+@media screen and (width<=830px) {
+  .activeNameDesignationContainer {
+    transform: translateY(-39vw);
+  }
+}
+@media screen and (width<=765px) {
+  .activeNameDesignationContainer {
+    transform: translateY(-42vw);
+  }
+}
+@media screen and (width<=500px) {
+  .activeNameDesignationContainer {
+    transform: translateY(-36vw);
+  }
+}
+
+@media screen and (width<=600px) {
+  .hoverCardContainer {
+    padding-top: 70px;
+    padding: 70px 10px;
+  }
+}
+
+.activeNameDesignationContainer > :first-child {
+  font-weight: 700;
+}

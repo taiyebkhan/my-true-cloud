@@ -1,0 +1,42 @@
+.oddCard::before,
+.evenCard::before {
+  content: "";
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  border-bottom: 4px dashed #a0a0a0;
+  border-left: 4px dashed #a0a0a0;
+  /* z-index: -1; */
+}
+
+.evenCard::before {
+  border-left: none;
+  border-right: 4px dashed #a0a0a0;
+  bottom: 0;
+}
+
+.cardContainer > :first-child::before {
+  content: "";
+  display: block;
+  bottom: 0;
+  height: 50% !important;
+}
+
+.cardContainer > :last-child::before {
+  content: "";
+  display: block;
+  top: 0;
+  height: 50% !important;
+  border-bottom: none;
+}
+@media only screen and (max-width: 640px) {
+  .cardContainer > :first-child::before,
+  .cardContainer > :last-child::before,
+  .oddCard::before,
+  .evenCard::before {
+    display: none;
+  }
+}

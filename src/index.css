@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kite+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #121212;
+  --color-primary: #0d71ac;
+  --color-primary-dark: #106a9e;
+  --color-primary-medium: #a3dbff;
+  --primary-light: #bae4ff;
+  --primary-background: #edf8ff;
+  --color-secondary: #faa050;
+  --color-orange: #ee652a;
+  --color-orange-normal: #f98222;
+  --gray: #f1f1f1;
+  --grayDark: #8f8f8f;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+html:has(#showReqDemoForm) {
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primary-dark);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.fontKiteOne {
+  font-family: "Kite One", sans-serif;
+}
+.fontInter {
+  font-family: "inter";
+}
+
+.bgDark {
+  background-color: var(--primary-dark);
+}
+.bgPrimary {
+  background-color: var(--color-primary);
+}
+.bgPrimaryMedium {
+  background-color: var(--color-primary-medium);
+}
+.bgPrimaryLight {
+  background-color: var(--primary-light);
+}
+.lightBackground {
+  background-color: var(--primary-background);
+}
+.bgGray {
+  background-color: var(--gray);
+}
+.bgGrayDark {
+  background-color: var(--grayDark);
+}
+
+.colorPrimary {
+  color: var(--color-primary);
+}
+.colorSecondary {
+  color: var(--color-secondary);
+}
+.colorOrange {
+  color: var(--color-orange);
+}
+.bgPrimaryMedium {
+  background-color: var(--color-primary-medium);
+}
+
+.innerContainer {
+
+  @apply max-w-screen-xl mx-auto max-[1400px]:px-3 max-lg:px-7;
+  /* @apply max-[1800px]:px-4 max-w-[1738px] mx-auto max-[1400px]:px-3 max-lg:px-7; */
+  /* @apply mx-auto max-[1400px]:px-3 max-lg:px-7; */
+}
+.homeGetSolutionCard {
+  box-shadow: 0px 0px 20.200000762939453px 0px #00000040;
+}
+
+.fadeIn {
+  opacity: 0.2;
+  visibility: hidden;
+  animation: fadeIn 0.6s linear forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+button {
+  font-family: "inter";
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 900;
+  font-family: "inter";
+  line-height: 72px;
+}
+h2 {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "inter";
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 41px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  button,
+  p {
+    font-size: 16px;
+  }
+  button > svg {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .homeGetSolutionCard {
+    box-shadow: 0px 0px 5.800000190734863px 0px #00000040;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  button,
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  button,
+  p {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

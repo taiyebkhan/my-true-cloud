@@ -1,0 +1,53 @@
+.backgroundEffect {
+  position: absolute;
+  top: -30%;
+  left: -4%;
+  z-index: -1;
+  background: linear-gradient(
+    83.19deg,
+    #edf8ff 0.89%,
+    #edf8ff 7.77%,
+    #0d71ac 81.58%
+  );
+
+  @apply w-[110%] min-w-[1800px] h-[956.67px] origin-top-left rotate-[-11.88deg] rounded-[14px] shadow-2xl;
+  /* transition: all .5s;
+  animation: float 6s ease-in infinite;
+  backface-visibility: hidden; */
+}
+
+@media (max-width: 1280px) and (min-width: 1110px) {
+  .backgroundEffect {
+    top: -80%;
+    left: -8%;
+  }
+}
+@media (max-width: 1109px) {
+  .backgroundEffect {
+    top: -85%;
+    left: -10%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .backgroundEffect {
+    top: -14%;
+    /* left: -8%; */
+  }
+}
+
+@media (max-width: 645px) {
+  .backgroundEffect {
+    top: -45%;
+    left: -22%;
+    min-width: 150%;
+  }
+}
+
+@media (max-width: 480px) {
+  .backgroundEffect {
+    top: -55%;
+    left: -30%;
+  }
+}

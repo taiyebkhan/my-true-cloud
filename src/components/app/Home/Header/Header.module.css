@@ -1,0 +1,64 @@
+.datePickerContainer > div > :last-child {
+  display: none;
+}
+
+.cardIcon {
+  height: 34px;
+  display: inline-block;
+}
+
+.cardIcon svg path {
+  transition: all 0.2s;
+}
+.activeCardIcon > svg path {
+  fill: #fff;
+  color: #fff;
+}
+
+.cardIcon > svg,
+.cardIcon > svg {
+  height: 100%;
+  font-size: 34px;
+}
+
+.productTextContainer {
+  transition: all 1s;
+  transform: translateX(-200vw) translateY(-50%);
+  /* animation: slideOut 0.8s linear forwards; */
+}
+
+@media (min-width: 1600px) {
+  .productTextContainer {
+    transition: all 1s;
+    transform: translateX(-200%) translateY(-50%);
+    /* animation: slideOut 0.8s linear forwards; */
+  }
+}
+
+.slideIn {
+  transform: translateX(0%) translateY(-50%);
+
+  /* transform: translateX(-200%) translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  animation-name: slideIn;
+  animation-duration: 0.8s;
+  animation-iteration-count: forwards; */
+  /* animation-delay: 1s; */
+}
+
+@keyframes slideOut {
+  100% {
+    transform: translateX(-200vw) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateX(0%) translateY(-50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
